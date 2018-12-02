@@ -33,4 +33,4 @@ python main.py ucf101 RGB TRAIN_SPLIT_FILE_PATH VAL_SPLIT_FILE_PATH \
 ## Testing model
 
 python test_models.py ucf101 RGB VAL_SPLIT_FILE_PATH ucf101_bninception__rgb_model_best.pth.tar \
-   --arch BNInception --save_scores scores_bninception.txt --workers 4 --gpus 0 1 2 3
+   --arch BNInception --save_scores scores_bninception --workers 4 --gpus 0 1 2 3
