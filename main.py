@@ -9,9 +9,9 @@ import torch.backends.cudnn as cudnn
 import torch.optim
 from torch.nn.utils import clip_grad_norm
 
-from dataset import TSNDataSet
-from models import TSN
-from transforms import *
+from src.dataset import TSNDataSet
+from src.models import TSN
+from src.transforms import *
 from opts import parser
 
 best_prec1 = 0

@@ -6,10 +6,10 @@ import torch.nn.parallel
 import torch.optim
 from sklearn.metrics import confusion_matrix
 
-from dataset import TSNDataSet
-from models import TSN
-from transforms import *
-from ops import ConsensusModule
+from src.dataset import TSNDataSet
+from src.models import TSN
+from src.transforms import *
+from src.ops import ConsensusModule
 
 # options
 parser = argparse.ArgumentParser(
