@@ -24,13 +24,13 @@ FRAME_PATH: Path to which the frames were extracted.
 
 ## Training model with BNInception backbone
 
-`python main.py ucf101 RGB TRAIN_SPLIT_FILE_PATH VAL_SPLIT_FILE_PATH \
-   --arch BNInception  --num_segments 3 \
-   --gd 20 --lr 0.001 --lr_steps 30 60 --epochs 80 \
-   -b 128 -j 8 --dropout 0.8 \
-   --snapshot_pref ucf101_bninception_  --gpus 0 1 2 3`
+`python main.py ucf101 RGB TRAIN_SPLIT_FILE_PATH VAL_SPLIT_FILE_PATH \`
+   `--arch BNInception  --num_segments 3 \`
+   `--gd 20 --lr 0.001 --lr_steps 30 60 --epochs 80 \`
+   `-b 128 -j 8 --dropout 0.8 \`
+   `--snapshot_pref ucf101_bninception_  --gpus 0 1 2 3`
    
 ## Testing model
 
-`python test_models.py ucf101 RGB VAL_SPLIT_FILE_PATH ucf101_bninception__rgb_model_best.pth.tar \
-   --arch BNInception --save_scores scores_bninception --workers 4 --gpus 0 1 2 3`
+`python test_models.py ucf101 RGB VAL_SPLIT_FILE_PATH ucf101_bninception__rgb_model_best.pth.tar \`
+   `--arch BNInception --save_scores scores_bninception --workers 4 --gpus 0 1 2 3`
