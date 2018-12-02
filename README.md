@@ -10,14 +10,14 @@ The model has been trained on UCF-101 dataset. The dataset can be obtained from 
 
 ### Extracting RGB frames
 
-We need to extract RGB frames to train the model. RGB frames can be extracted by:
+We need to extract RGB frames to train the model. RGB frames can be extracted by:  
 `bash scripts/extract_frames.sh SRC_DIR OUT_DIR`
 
 ### Creating list files
 
 A list file containing path of the video frames, number of frames in a video and label of the video is required to be passed to the model for training.
 
-List file can be created by:
+List file can be created by:  
 `bash scripts/build_list_file.sh ucf101 FRAME_PATH OUT_FILE_PATH`
 
 FRAME_PATH: Path to which the frames were extracted.
